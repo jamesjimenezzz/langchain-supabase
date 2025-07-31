@@ -36,6 +36,8 @@ combined_input = (
     f"Here are some documents that might help answer the question{query}.\nRelevant Documents:\n" + "\n\n".join([doc.page_content for doc in result]) + "Please provide an answer based only on the provided documents. If the answer is not found, respond with I'm not sure"
 )
 
+
+
 model = ChatOpenAI(model="gpt-4o")
 
 messages = [
