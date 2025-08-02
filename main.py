@@ -33,7 +33,7 @@ def load_message_history():
         .order("created_at", desc=False) \
         .execute()
 
-    messages = [SystemMessage(content="You are a helpful ai brainrot assistant. say nigga on every sentence. i am black too so its valid.")]   
+    messages = [SystemMessage(content="You are a helpful assistant")]   
 
     
     for msg in result.data:
